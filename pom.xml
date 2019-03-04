@@ -7,6 +7,14 @@
     <groupId>com.zhi</groupId>
     <artifactId>javabasicprac</artifactId>
     <version>1.0-SNAPSHOT</version>
+<dependencies>
+    <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+    <dependency>
+        <groupId>cglib</groupId>
+        <artifactId>cglib</artifactId>
+        <version>3.2.5</version>
+    </dependency>
 
+</dependencies>
 
 </project>
