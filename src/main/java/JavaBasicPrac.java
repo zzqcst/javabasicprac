@@ -1,13 +1,11 @@
-import cglib.CglibProxyExample;
-import cglib.ReflectServiceImpl;
-import dynamicproxy.HelloWorld;
-import dynamicproxy.HelloWorldImpl;
-import dynamicproxy.JDKProxyExample;
+import obsever.JDObserver;
+import obsever.ProductList;
 
 public class JavaBasicPrac {
     public static void main(String[] args) {
-        CglibProxyExample example = new CglibProxyExample();
-        ReflectServiceImpl proxy = (ReflectServiceImpl) example.getProxy(ReflectServiceImpl.class);
-        proxy.sayHello("李白");
+        ProductList observable = ProductList.getInstance();
+        JDObserver observer = new JDObserver();
+        observable.addProductListObserver(observer);
+        observable.addProduct("显示器");
     }
 }
