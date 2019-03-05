@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
 
-    <classPathEntry location="F:\maven\repository\mysql\mysql-connector-java\6.0.6\mysql-connector-java-6.0.6.jar"/>
+    <classPathEntry location="F:\maven\repository\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar"/>
 
     <context id="context" targetRuntime="MyBatis3Simple">
         <commentGenerator>
@@ -24,7 +24,7 @@
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="mybatis" targetProject="src/main/java">
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
