@@ -15,6 +15,7 @@ public class JavaBasicPrac {
         String resource = "mybatis-config.xml";
         InputStream inputStream;
         try {
+
             inputStream = Resources.getResourceAsStream(resource);
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         } catch (IOException e) {
