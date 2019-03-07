@@ -7,7 +7,6 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 public class CglibProxyExample implements MethodInterceptor {
-    @Override
     public Object intercept(Object proxy, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
         System.out.println("调用真实对象前");
         Object result = methodProxy.invokeSuper(proxy, args);
